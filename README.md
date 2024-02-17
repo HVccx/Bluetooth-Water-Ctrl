@@ -2,7 +2,36 @@
 
 ## What's the use?
 Shenzhen regular electronic "Bluetooth water controller" control program. It is suitable for dormitory water heater in colleges and universities in China.
-You need to capture the Bluetooth water controller by yourself (file like ***btsnoop_hci_20231222_210511.log***) , this tool can extract the key from the package and generate a web version of the Bluetooth water controller.
+You need to capture the Bluetooth water controller by yourself (file like ***\*.log***) , this tool can extract the key from the package and generate a web version of the Bluetooth water controller.
+
+## How to capture Bluetooth packets?
+You need to use an `Android phone`, enable `Bluetooth HCI information collection log` in `Developer options`, and turn on Bluetooth to boil water on the target device
+
+## How to extract Bluetooth logs from Android phone?
+Use adb in the `platform-tools` folder to obtain, connect the Android phone to the PC, open the `USB debugging` function, and open the `terminal` in the `platform-tools folder`
+
+Check the device connection
+```sh
+adb devices
+```
+```sh
+$ adb devices
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+List of devices attached
+WTKDU1**********        device
+```
+Device connection successful
+
+Get the Bluetooth log file
+```sh
+adb pull /data/log/bt <PC_local_path>
+```
+```sh
+$ adb pull /data/log/bt C:\Users\Administrator\Desktop
+/data/log/bt/: 1 file pulled, 0 skipped. 5.3 MB/s (121098 bytes in 0.022s)
+```
+The Bluetooth log file will appear in the directory you specify.  -->  *\*.log*
 
 ## How to use?
 use ***BlueWater.py*** && ***BlueWater.exe*** to get key and create ***index.html***
