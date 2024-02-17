@@ -5,10 +5,10 @@ Shenzhen regular electronic "Bluetooth water controller" control program. It is 
 You need to capture the Bluetooth water controller by yourself (file like ***\*.log***) , this tool can extract the key from the package and generate a web version of the Bluetooth water controller.
 
 ## How to capture Bluetooth packets?
-You need to use an `Android phone`, enable `Bluetooth HCI information collection log` in `Developer options`, and turn on Bluetooth to boil water on the target device
+You need to use an *Android phone*, enable *Bluetooth HCI information collection log* in *Developer options*, and turn on Bluetooth to boil water on the target device.
 
 ## How to extract Bluetooth logs from Android phone?
-Use adb in the `platform-tools` folder to obtain, connect the Android phone to the PC, open the `USB debugging` function, and open the `terminal` in the `platform-tools folder`
+Use adb in the platform-tools folder to obtain, connect the Android phone to the PC, open the *USB debugging* function, and open the *terminal* in the *platform-tools folder*.
 
 Check the device connection
 ```sh
