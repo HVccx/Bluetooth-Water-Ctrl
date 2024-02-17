@@ -7,7 +7,7 @@ You need to capture the Bluetooth water controller by yourself, this tool can ex
 ## How to use?
 use *BlueWater.py* && *BlueWater.exe* to get key and create *index.html*
 ```sh
-$ python BlueWater.py your_file_path
+python BlueWater.py your_file_path
 ```
 ```sh
 Indexes of 'fefe':[93058, 93390]
@@ -18,7 +18,7 @@ Run index.html in Edge && Chrome !!!    enjoy ^_^
 ```
 or
 ```sh
-$ BlueWater.exe your_file_path
+BlueWater.exe your_file_path
 ```
 ```sh
 Indexes of 'fefe':[93058, 93390]
