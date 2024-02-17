@@ -15,7 +15,6 @@ Check the device connection
 adb devices
 ```
 ```sh
-$ adb devices
 * daemon not running; starting now at tcp:5037
 * daemon started successfully
 List of devices attached
@@ -25,10 +24,9 @@ Device connection successful
 
 Get the Bluetooth log file
 ```sh
-adb pull /data/log/bt <PC_local_path>
+adb pull <log_path> <PC_local_path>
 ```
 ```sh
-$ adb pull /data/log/bt C:\Users\Administrator\Desktop
 /data/log/bt/: 1 file pulled, 0 skipped. 5.3 MB/s (121098 bytes in 0.022s)
 ```
 The Bluetooth log file will appear in the directory you specify.  -->  *\*.log*
