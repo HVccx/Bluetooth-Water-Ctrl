@@ -2,10 +2,10 @@
 
 ## What's the use?
 Shenzhen regular electronic "Bluetooth water controller" control program. It is suitable for dormitory water heater in colleges and universities in China.
-You need to capture the Bluetooth water controller by yourself, this tool can extract the key from the package and generate a web version of the Bluetooth water controller.
+You need to capture the Bluetooth water controller by yourself (file like ***btsnoop_hci_20231222_210511.log***) , this tool can extract the key from the package and generate a web version of the Bluetooth water controller.
 
 ## How to use?
-use *BlueWater.py* && *BlueWater.exe* to get key and create *index.html*
+use ***BlueWater.py*** && ***BlueWater.exe*** to get key and create ***index.html***
 ```sh
 python BlueWater.py your_file_path
 ```
